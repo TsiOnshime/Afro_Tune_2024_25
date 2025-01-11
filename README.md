@@ -85,10 +85,11 @@ This repository contains the backend API for AfroTuneNest, a music player websit
 ## Usage Instructions 
  
 ### Super Admin: 
-1. Log in using the credentials: 
+1. Log in using the credentials:
+   login as a super admin using this email and password
    - Email: yediworku@gmail.com 
    - Password: pass 
-2. Use the Swagger API to register new artists. 
+2. Use the Swagger API to register new artists or the user inteface on the frontend. 
  
 ### Artist: 
 1. Log in with your credentials after being registered by the Super Admin. 
