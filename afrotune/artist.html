@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="artist-profile">
+        <div class="profile-header">
+            <div class="profile-info">
+                <div class="profile-left">
+                    <div class="profile-pic">
+                        <img src="default-profile.jpg" alt="Artist Profile" id="profilePic">
+                    </div>
+                    <div class="profile-text">
+                        <span class="artist-type">Artist</span>
+                        <h1 class="artist-name">Artist Name</h1>
+                        <p class="artist-bio">Artist Bio and Description</p>
+                    </div>
+                </div>
+                <button onclick="handleSignOut()" class="dark-badge">
+                    <i class="fa-regular fa-circle-down"></i>
+                    Sign Out
+                </button>
+            </div>
+        </div>
+    </div>
+            
+    <div class="content-section">
+        <div class="upload-section">
+            <h2>Upload New Song</h2>
+            <form id="upload-form" class="upload-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">Song Title</label>
+                    <input type="text" id="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="album">Album</label>
+                    <input type="text" id="album" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <input type="text" id="genre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <div class="file-upload-group">
+                    <div class="file-input">
+                        <label for="songFile">Song File (MP3)</label>
+                        <input type="file" id="songFile" accept="audio/*" required>
+                    </div>
+
+                    <div class="file-input">
+                        <label for="coverImage">Cover Image</label>
+                        <input type="file" id="coverImage" accept="image/*" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="upload-btn">Upload Song</button>
+            </form>
+        </div>
+
+        <!-- Add this after the song upload form in artist.html -->
+        <div class="content-section">
+            <div class="upload-section">
+                <h2>Update Artist Profile</h2>
+                <form id="profileForm" class="upload-form">
+                    <div class="form-group">
+                        <label for="artistName">Artist Name*</label>
+                        <input type="text" id="artistName" name="artist" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="artistBio">Bio</label>
+                        <textarea id="artistBio" name="bio"></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="artistGenre">Genre</label>
+                        <input type="text" id="artistGenre" name="genre">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="artistDescription">Description</label>
+                        <textarea id="artistDescription" name="description"></textarea>
+                    </div>
+            
+                    <div class="file-upload-group">
+                        <div class="file-input">
+                            <label for="profileImage">Profile Image*</label>
+                            <input type="file" id="profileImage" accept="image/*" required>
+                            <img id="imagePreview" src="#" alt="Preview" style="display: none; max-width: 200px; margin-top: 10px;">
+                        </div>
+                    </div> 
+                     <button type="submit" class="upload-btn">Update Profile</button>
+                </form>
+            </div>
+
+        <div id="songs-container" class="songs-container">
+            <!-- Songs will be loaded here -->
+        </div>
+    </div>
+
+    <script src="artist.js"></script>
+    <script src="signout.js"></script>
+</body>
+</html> 
