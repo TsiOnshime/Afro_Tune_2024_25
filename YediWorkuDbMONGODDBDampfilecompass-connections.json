@@ -1,0 +1,26 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "6ea18a4e-64bb-4a31-86cb-9f435a457d6a",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1736670693365"
+        }
+      },
+      "favorite": {
+        "name": "afrotune"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/?directConnection=true",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
