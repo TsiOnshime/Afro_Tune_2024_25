@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afro Tune - Complete Your Profile</title>
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <div class="info">
+      <h3>Tell Us About Yourself</h3>
+      <form id="infoForm">
+        <h3>Name</h3>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <span id="nameError" class="error-message"></span>
+
+        <h3>Date of Birth</h3>
+        <input type="date" id="dob" required />
+        <span id="dobError" class="error-message"></span>
+
+        <h3>Gender</h3>
+        <input type="radio" id="male" name="gender" value="male" required /> Male
+        <input type="radio" id="female" name="gender" value="female" /> Female
+        <span id="genderError" class="error-message"></span>
+
+        <input type="button" value="Submit" id="submitInfo" />
+      </form>
+    </div>
+    <footer class="ft3">
+      <p>&copy;2025 Afro Tune. All rights reserved.</p>
+    </footer>
+    <script src="signup.js"></script>
+  </body>
+</html>
