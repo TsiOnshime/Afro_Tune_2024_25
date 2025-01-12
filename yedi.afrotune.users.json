@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "677b905c52f5baf3a870cef7"
+  },
+  "fullName": "yedi",
+  "email": "yediworku@gmail.com",
+  "userPassword": "$2b$10$XKYQ7tJPehrEtdyOinpCRuumQ5KdbfsUfgTO0PbfbzXCXn3EMtpwC",
+  "dateOfBirth": "1990-01-01",
+  "gender": "female",
+  "role": "superadmin",
+  "status": true,
+  "userId": "10d7c6c5-5864-4b37-9546-269502557b3d",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677f731bd1eeb9648ad17e6e"
+  },
+  "fullName": "Bamlak",
+  "email": "Bame@gmail.com",
+  "userPassword": "$2b$10$swGDNnfykJVJ8MTwd.WLt.mfZcDILGgDOc4yZXIPB4PV9g1sdMboK",
+  "dateOfBirth": "2025-02-01",
+  "gender": "male",
+  "role": "user",
+  "status": true,
+  "userId": "51d8d69c-1baf-4ddb-ba36-cb8653d05b99",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6783e7e3dd085fc623b17e6f"
+  },
+  "fullName": "ArtistTESTDEMO",
+  "email": "ArtistTsion@gmail.com",
+  "userPassword": "$2b$10$nd5..92PVWMQ0Cta1YiyrO..tE/UaT85lo2HcPRiYyV7epvkUOOpK",
+  "dateOfBirth": "2025-01-23",
+  "gender": "female",
+  "role": "artist",
+  "status": true,
+  "userId": "c3ecbc29-60a0-4c67-92b8-4ba8bd694093",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6783e988dd085fc623b17ed6"
+  },
+  "fullName": "Userme",
+  "email": "meUser@gmail.com",
+  "userPassword": "$2b$10$XHS9ckb4EKtlPAd3WaAH/.Ji2DI5A0VR5M4Pf8EtXDSusBP1kdXFG",
+  "dateOfBirth": "2025-01-01",
+  "gender": "male",
+  "role": "user",
+  "status": true,
+  "userId": "c0b4610e-d057-477a-84bf-f3d9ed675e0f",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6783ed74a0de3f2334fb3864"
+  },
+  "fullName": "Artist2test",
+  "email": "artistest1q@gmail.com",
+  "userPassword": "$2b$10$DLepShwjffc0HBfLDmcTSuesQGZG7NIoI8JnwHtqWkO7XKvMAdvUm",
+  "dateOfBirth": "2024-12-31",
+  "gender": "male",
+  "role": "artist",
+  "status": true,
+  "userId": "030d2d6e-6a24-4375-807a-a38479b6d5fa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6783f0d9a0de3f2334fb390b"
+  },
+  "fullName": "TESTUSER",
+  "email": "Testuser@gmail.com",
+  "userPassword": "$2b$10$k5uiqjHMpoalerlZrSZsOOQIJ.wHNyZX7MG8VhgSPqsrYnMrV5KWS",
+  "dateOfBirth": "2025-01-01",
+  "gender": "male",
+  "role": "user",
+  "status": true,
+  "userId": "61367e0e-66c7-4a1a-a867-8878f5e42679",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6783f2caa0de3f2334fb3926"
+  },
+  "fullName": "sss",
+  "email": "dkjhjdk@gmail.com",
+  "userPassword": "$2b$10$T1eziUubyEd1mSiZp/q5QuQ743o4qWp1oWM7E8RPv9l3lVpUfL76e",
+  "dateOfBirth": "2025-01-09",
+  "gender": "male",
+  "role": "user",
+  "status": true,
+  "userId": "fa206615-1fa4-4a56-97a4-1037517b9483",
+  "__v": 0
+}]
