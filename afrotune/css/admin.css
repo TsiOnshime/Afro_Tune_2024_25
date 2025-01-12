@@ -1,0 +1,424 @@
+:root {
+    --primary-color: #1da1f2;
+    --background-dark: #121212;
+    --background-light: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --danger: #dc3545;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--background-light);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.logo i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li:hover, .nav-links li.active {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.nav-links li i {
+    width: 20px;
+    color: var(--primary-color);
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
+}
+
+.table-container {
+    margin-top: 20px;
+    background: var(--background-light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(29, 161, 242, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+td, th {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn i {
+    font-size: 12px;
+}
+
+.edit-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.delete-btn:hover {
+    background: #dc3545;
+}
+
+.modal .delete-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.artist-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--background-light);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--background-light);
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sign-out-btn {
+    margin-top: auto !important;
+    color: #ff4444 !important;
+    cursor: pointer;
+}
+
+.sign-out-btn:hover {
+    background-color: rgba(255, 68, 68, 0.1) !important;
+}
+
+.sign-out-btn i {
+    color: #ff4444 !important;
+}
+
+#userEmail {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification.success {
+    background: linear-gradient(45deg, #28a745, #20c997);
+}
+
+.notification.error {
+    background: linear-gradient(45deg, #dc3545, #ff4444);
+}
+
+.notification-slide-in {
+    animation: slideIn 0.3s ease-out forwards;
+}
+
+.notification-slide-out {
+    animation: slideOut 0.3s ease-in forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.role-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.role-badge.superadmin {
+    background-color: #dc3545;
+    color: white;
+}
+
+.role-badge.artist {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.role-badge.user {
+    background-color: #28a745;
+    color: white;
+}
+
+.admin-badge {
+    color: #dc3545;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.modal p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.user-info-preview {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.user-info-preview .user-details {
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.user-info-preview p {
+    margin: 8px 0;
+    color: var(--text-secondary);
+}
+
+.user-info-preview strong {
+    color: var(--text-primary);
+    margin-right: 8px;
+}
+
+.warning-text {
+    color: var(--danger) !important;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.modal p {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.modal .delete-btn {
+    background: var(--danger);
+    color: white;
+}
+
+.modal .delete-btn:hover {
+    background: #dc3545;
+}
+
+.modal .cancel-btn {
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+
+.modal .cancel-btn:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+} 
