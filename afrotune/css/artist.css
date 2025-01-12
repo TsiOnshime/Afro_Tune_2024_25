@@ -1,0 +1,256 @@
+/* Artist Dashboard Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: white;
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+.profile-section {
+    text-align: center;
+    padding: 24px 0;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.artist-name {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #fff;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 32px;
+    background-color: #121212;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Upload Form Styles */
+.upload-form {
+    background-color: #181818;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b3b3b3;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: #282828;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.form-group input[type="file"] {
+    padding: 8px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #282828;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.upload-btn {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+    background-color: #1991db;
+    transform: scale(1.02);
+}
+
+/* Songs Grid Styles */
+.songs-section {
+    margin-top: 40px;
+}
+
+.songs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 1.5rem;
+}
+
+.card {
+    background-color: #232323;
+    width: 300px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.card-info {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
+.play-button {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover .play-button {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.play-button i {
+    font-size: 40px;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 16px 24px;
+    border-radius: 4px;
+    background-color: #1da1f2;
+    color: white;
+    transform: translateY(150%);
+    transition: transform 0.3s ease;
+}
+
+.notification.show {
+    transform: translateY(0);
+}
+
+/* Add these styles to your existing CSS */
+.no-songs {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    background: #181818;
+    border-radius: 8px;
+    color: #b3b3b3;
+}
+
+.notification.error {
+    background-color: #e74c3c;
+}
+
+/* Style file inputs better */
+.form-group input[type="file"] {
+    background-color: #282828;
+    border: 1px dashed #404040;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-group input[type="file"]:hover {
+    border-color: #1da1f2;
+    background-color: #2a2a2a;
+} 
+.preview-container {
+    margin-top: 10px;
+}
+
+#imagePreview {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.file-input {
+    margin-bottom: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.upload-section {
+    margin-bottom: 40px;
+}
+
+.upload-section h2 {
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
