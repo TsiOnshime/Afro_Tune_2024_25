@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Afrotunes - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  
+    <div class="main">
+        
+       
+        <!-- main contain started  -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <!-- right aeroow -->
+                </div>
+                <div class="sticky-nav-option">
+                    <div class="nav">
+                        <div class="nav-option">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" 
+                                   class="search-input" 
+                                   placeholder="Search song titles..." 
+                                   aria-label="Search songs">
+                        </div>
+                    </div>
+                    <button id="signOutBtn" class="dark-badge">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sign Out
+                    </button>
+                </div>
+            </div>
+            <div class="header">
+                <h1>Good Morning!</h1>
+            </div>
+            <div id="search-results-section" style="display: none;">
+                <h2>Search Results</h2>
+                <div class="card-container" id="search-results"></div>
+            </div>
+            <br>
+            <h2>Enjoy music with Afrotunes </h2>
+            
+            <div class="card-container" id="song-cards">
+                <!-- Cards will be dynamically inserted here -->
+                <div class="loading-spinner" id="loading-spinner">Loading...</div>
+            </div>
+            <h2>Recommended for today</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/recomnded/img1.jpg" alt="" class="card-img">
+                    <p class="card-title">Halka Halka</p>
+                    <p class="card-info"> Single by Sunidhi Chauhan</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img2.jpg" alt="" class="card-img">
+                    <p class="card-title">Mahahetvali </p>
+                    <p class="card-info">Mahahetvali - Single by Aditya Gadhvi </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img3.jpg" alt="" class="card-img">
+                    <p class="card-title">Malang Sajna</p>
+                    <p class="card-info">Malang Sajna - Single by Sachet Tandon</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img4.jpg" alt="" class="card-img">
+                    <p class="card-title">Tum Prem Ho</p>
+                    <p class="card-info">lyrics by Mohit gitLalwani</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img5.jpg" alt="" class="card-img">
+                    <p class="card-title">Moti Veraana </p>
+                    <p class="card-info">Aditya Gadhvi best audio songs </p>
+                </div>
+                <div class="card">
+                    <img src="./assets//recomnded/img6.jpg" alt="" class="card-img">
+                    <p class="card-title">Love Ni Bhavai </p>
+                    <p class="card-info">Sachin-jigar,Niren bhatt</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/recomnded/img7.jpg" alt="" class="card-img">
+                    <p class="card-title">Tari Madh Mithi </p>
+                    <p class="card-info">jigardhan gadhavi</p>
+                </div>
+                <br><br>
+            </div>
+           
+            <br><br><br><br><br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h2>Communities</h2>
+                    <ul>
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-instagram "></i>
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter "></i>   
+                    </div>
+                </div>
+            </div>
+           <div class="footer">
+            <div class="line"></div>
+           </div>
+           <ul class="legal-list">
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">About Ads</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <p class="copyright">© 2023 Spotify AB</p>
+            <br><br>
+        </ul>
+           <br><br><br><br>
+        </div>
+    </div>
+    <div class="music-player">
+        <div class="album">
+            <img id="current-song-img" src="./assets/default-cover.jpg" alt="Album Cover" width="50" height="50">
+            <div class="song-info">
+                <p id="current-song-title">Select a song</p>
+                <p id="current-song-artist">-</p>
+            </div>
+        </div>
+        
+        <div class="player">
+            <div class="player-controls">
+                <i class="fa-solid fa-shuffle" id="shuffle-btn"></i>
+                <i class="fa-solid fa-backward-step" id="prev-btn"></i>
+                <i class="fa-solid fa-play" id="play-pause-btn"></i>
+                <i class="fa-solid fa-forward-step" id="next-btn"></i>
+                <i class="fa-solid fa-repeat" id="repeat-btn"></i>
+            </div>
+            <div class="playback-bar">
+                <span id="current-time">0:00</span>
+                <input type="range" min="0" max="100" value="0" class="progress-bar" id="song-progress">
+                <span id="total-time">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" min="0" max="100" value="100" class="volume-bar">
+        </div>
+    </div>
+    <audio id="audio-player"></audio>
+    </div>
+    <script src="script.js"></script>
+    <script src="signout.js"></script>
+</body>
+
+</html>
