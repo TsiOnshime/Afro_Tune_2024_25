@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signout-container {
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.signout-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.music-icon {
+    font-size: 48px;
+    color: #1da1f2;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+p {
+    color: #b3b3b3;
+    margin: 0 0 20px 0;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top-color: #1da1f2;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
